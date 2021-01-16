@@ -3,21 +3,19 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 const AddCode = () => (
-  <div className="AddCode">Ajout de code
-    <form>
-      <input type="text" placeholder="Ajouter un titre" />
-      <select>
-        <option value="">--Choisir une catégorie--</option>
-        <option value="react">react</option>
-        <option value="html">html</option>
-        <option value="css">css</option>
-        <option value="js">js</option>
-      </select>
-      <label> Ton code ici :
-        <textarea>Mon code ici</textarea>
-      </label>
-    </form>
-  </div>
+  <form className="AddCode">
+    <h1>Ajout de code</h1>
+    <select>
+      <option value="">--Choisir une catégorie--</option>
+      <option value="react">react</option>
+      <option value="html">html</option>
+      <option value="css">css</option>
+      <option value="js">js</option>
+    </select>
+    <input type="text" placeholder="Ajouter un titre" />
+    <input type="text" placeholder="Ajouter une description" />
+    <textarea placeholder="Ton code ici" />
+  </form>
 );
 
 export default AddCode;
